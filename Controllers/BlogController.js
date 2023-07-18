@@ -28,8 +28,8 @@ const updateArticle=async(req,res)=>{
 };
 
 const getArticle=async(req,res)=>{
-    await Blog.findById(req.params.id);
-    res.send({msg:"Article Showed"});
+    var Article =await Blog.findById(req.params.id);
+    res.send(Article);
 };
 
 const deleteAllArticles=async(req,res)=>{

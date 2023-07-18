@@ -16,7 +16,7 @@ app.use(cors(
 ));
 
 
-app.use('/blog',BlogRouter);
+app.use('/',BlogRouter);
 
 
 
