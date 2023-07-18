@@ -4,7 +4,10 @@ const Blog=mongoose.model('Blog',{
     title:String,
     description:String,
     pic:String,
-    date:date.now(),
+    date:{
+        type:Date,
+        default:Date.now()
+    }
 })
 
 

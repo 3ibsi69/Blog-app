@@ -5,6 +5,8 @@ const cors=require('cors');
 const mongoose=require('mongoose');
 app.use(express.json());
 
+const BlogRouter=require('./Routes/BlogRouter');
+
 
 
 app.use(cors(
@@ -14,8 +16,7 @@ app.use(cors(
 ));
 
 
-
-
+app.use('/blog',BlogRouter);
 
 
 
